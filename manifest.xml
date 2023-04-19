@@ -5,11 +5,11 @@
 <DefaultLocale>en-US</DefaultLocale>
 <DisplayName DefaultValue="Beacon-DTX"/>
 <Description DefaultValue="BEACON Digital Transformation for Excellence plugin"/>
-<IconUrl DefaultValue="https://kelvingrg.github.io/dist-addin-/assets/icon-32.png"/>
-<HighResolutionIconUrl DefaultValue="https://kelvingrg.github.io/dist-addin-/assets/icon-64.png"/>
-<SupportUrl DefaultValue="https://www.contoso.com/help"/>
+<IconUrl DefaultValue="https://kelvingrg.github.io/dist-addin-/assets/beaconDTX-logo-32.png"/>
+<HighResolutionIconUrl DefaultValue="https://kelvingrg.github.io/dist-addin-/assets/beaconDTX-logo-64.png"/>
+<SupportUrl DefaultValue="https://kelvingrg.github.io/dist-addin-/"/>
 <AppDomains>
-<AppDomain>https://kelvingrg.github.io/dist-addin-</AppDomain>
+<AppDomain>http://beacon-excel-dev.s3-website-us-east-1.amazonaws.com/</AppDomain>
 </AppDomains>
 <Hosts>
 <Host Name="Workbook"/>
