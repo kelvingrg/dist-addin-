@@ -1,0 +1,135 @@
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="TaskPaneApp">
+<Id>a160be6c-3ca3-4ec8-98fa-ab9740729370</Id>
+<Version>1.0.0.0</Version>
+<ProviderName>Beacon</ProviderName>
+<DefaultLocale>en-US</DefaultLocale>
+<DisplayName DefaultValue="Beacon-DTX"/>
+<Description DefaultValue="BEACON Digital Transformation for Excellence plugin"/>
+<IconUrl DefaultValue="https://excel-dev.beacon-dtx.com/assets/beaconDTX-logo-32.png"/>
+<HighResolutionIconUrl DefaultValue="https://excel-dev.beacon-dtx.com/assets/beaconDTX-logo-64.png"/>
+<SupportUrl DefaultValue="https://excel-dev.beacon-dtx.com/"/>
+<AppDomains>
+<AppDomain>https://localhost:3000</AppDomain>
+<!-- http://beacon-excel-dev.s3-website-us-east-1.amazonaws.com -->
+</AppDomains>
+<Hosts>
+<Host Name="Workbook"/>
+</Hosts>
+<Requirements>
+<Sets DefaultMinVersion="1.1">
+<Set Name="SharedRuntime" MinVersion="1.1"/>
+</Sets>
+</Requirements>
+<DefaultSettings>
+<SourceLocation DefaultValue="https://excel-dev.beacon-dtx.com/taskpane.html"/>
+<!-- <RequestedWidth>600</RequestedWidth>
+<RequestedHeight>400</RequestedHeight> -->
+<!-- <DefaultPane>Taskpane</DefaultPane> -->
+</DefaultSettings>
+<Permissions>ReadWriteDocument</Permissions>
+<VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="VersionOverridesV1_0">
+<Hosts>
+<Host xsi:type="Workbook">
+<Runtimes>
+<Runtime resid="SharedRuntime.Url" lifetime="long"/>
+</Runtimes>
+<!-- <AllFormFactors>
+<ExtensionPoint xsi:type="CustomFunctions">
+<Script>
+<SourceLocation resid="Functions.Script.Url"/>
+</Script>
+<Page>
+<SourceLocation resid="SharedRuntime.Url"/>
+</Page>
+<Metadata>
+<SourceLocation resid="Functions.Metadata.Url"/>
+</Metadata>
+<Namespace resid="Functions.Namespace"/>
+</ExtensionPoint>
+</AllFormFactors> -->
+<DesktopFormFactor>
+<GetStarted>
+<Title resid="GetStarted.Title"/>
+<Description resid="GetStarted.Description"/>
+<LearnMoreUrl resid="GetStarted.LearnMoreUrl"/>
+<!-- <FunctionFile resid="Taskpane.Url"/> -->
+</GetStarted>
+<FunctionFile resid="SharedRuntime.Url"/>
+<ExtensionPoint xsi:type="PrimaryCommandSurface">
+<CustomTab id="BeaconDtx">
+<!-- <Tooltip>
+<Title resid="BeaconDtx.SuperTip.Title"/>
+<Description resid="BeaconDtx.SuperTip.Description"/>
+</Tooltip> -->
+<!-- <Action xsi:type="ShowTaskpane">
+<TaskpaneId>ButtonId1</TaskpaneId>
+<SourceLocation resid="Taskpane.Url"/>
+</Action> -->
+<!--  login button starts   -->
+<Group id="beacon">
+<Label resid="beacon.Label"/>
+<Icon>
+<bt:Image size="16" resid="beaconDTX-logo.16x16"/>
+<bt:Image size="32" resid="beaconDTX-logo.32x32"/>
+<bt:Image size="80" resid="beaconDTX-logo.80x80"/>
+</Icon>
+<Control xsi:type="Button" id="beaconDTX">
+<Label resid="beaconDTX.Label"/>
+<Supertip>
+<Title resid="beaconDTX.Label"/>
+<Description resid="beaconDTX.Tooltip"/>
+</Supertip>
+<Icon>
+<bt:Image size="16" resid="beaconDTX-logo.16x16"/>
+<bt:Image size="32" resid="beaconDTX-logo.32x32"/>
+<bt:Image size="80" resid="beaconDTX-logo.80x80"/>
+</Icon>
+<Action xsi:type="ExecuteFunction">
+<FunctionName>showTaskapne</FunctionName>
+</Action>
+</Control>
+</Group>
+<!--  login button ends   -->
+<Label resid="BeaconDtx.Label"/>
+</CustomTab>
+</ExtensionPoint>
+</DesktopFormFactor>
+</Host>
+</Hosts>
+<Resources>
+<bt:Images>
+<bt:Image id="beaconDTX-logo.16x16" DefaultValue="https://excel-dev.beacon-dtx.com/assets/beaconDTX-logo-16.png"/>
+<bt:Image id="beaconDTX-logo.32x32" DefaultValue="https://excel-dev.beacon-dtx.com/assets/beaconDTX-logo-32.png"/>
+<bt:Image id="beaconDTX-logo.80x80" DefaultValue="https://excel-dev.beacon-dtx.com/assets/beaconDTX-logo-80.png"/>
+
+</bt:Images>
+<bt:Urls>
+<!-- <bt:Url id="Functions.Script.Url" DefaultValue="https://excel-dev.beacon-dtx.com/public/functions.js"/>
+<bt:Url id="Functions.Metadata.Url" DefaultValue="https://excel-dev.beacon-dtx.com/public/functions.json"/>
+<bt:Url id="Functions.Page.Url" DefaultValue="https://excel-dev.beacon-dtx.com/public/functions.html"/> -->
+<bt:Url id="GetStarted.LearnMoreUrl" DefaultValue="https://go.microsoft.com/fwlink/?LinkId=276812"/>
+<bt:Url id="Commands.Url" DefaultValue="https://excel-dev.beacon-dtx.com/commands.html"/>
+<bt:Url id="Taskpane.Url" DefaultValue="https://excel-dev.beacon-dtx.com/taskpane.html"/>
+<bt:Url id="SharedRuntime.Url" DefaultValue="https://excel-dev.beacon-dtx.com/taskpane.html"/>
+</bt:Urls>
+<bt:ShortStrings>
+<bt:String id="Functions.Namespace" DefaultValue="BEACON"/>
+<bt:String id="GetStarted.Title" DefaultValue="Get started with BEACON-INDIA add-in!"/>
+<bt:String id="beacon.Label" DefaultValue="Beacon-DTX"/>
+<bt:String id="BeaconDtx.Label" DefaultValue="Beacon-DTX"/>
+<bt:String id="BeaconDtx.SuperTip.Title" DefaultValue="Beacon-DTX"/>
+
+<bt:String id="beaconDTX.Label" DefaultValue=" "/>
+
+</bt:ShortStrings>
+<bt:LongStrings>
+<bt:String id="GetStarted.Description" DefaultValue="BEACON Digital Transformation for Excellence plugin"/>
+<bt:String id="beaconDTX.Tooltip" DefaultValue="Click to Login"/>
+<bt:String id="BeaconDtx.SuperTip.Description" DefaultValue="BEACON Digital Transformation for Excellence plugin"/>
+
+
+
+</bt:LongStrings>
+</Resources>
+</VersionOverrides>
+</OfficeApp>
