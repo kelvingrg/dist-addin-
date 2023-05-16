@@ -5,9 +5,9 @@
 <DefaultLocale>en-US</DefaultLocale>
 <DisplayName DefaultValue="Beacon-DTX"/>
 <Description DefaultValue="BEACON Digital Transformation for Excellence plugin"/>
-<IconUrl DefaultValue="https://kelvingrg.github.io/dist-addin-/assets/beaconDTX-logo-32.png"/>
-<HighResolutionIconUrl DefaultValue="https://kelvingrg.github.io/dist-addin-/assets/beaconDTX-logo-64.png"/>
-<SupportUrl DefaultValue="https://kelvingrg.github.io/dist-addin-/"/>
+<IconUrl DefaultValue="https://excel-stg.beacon-dtx.com/assets/beaconDTX-logo-32.png"/>
+<HighResolutionIconUrl DefaultValue="https://excel-stg.beacon-dtx.com/assets/beaconDTX-logo-64.png"/>
+<SupportUrl DefaultValue="https://excel-stg.beacon-dtx.com/"/>
 <AppDomains>
 <AppDomain>https://localhost:3000</AppDomain>
 <!-- http://beacon-excel-dev.s3-website-us-east-1.amazonaws.com -->
@@ -21,10 +21,7 @@
 </Sets>
 </Requirements>
 <DefaultSettings>
-<SourceLocation DefaultValue="https://kelvingrg.github.io/dist-addin-/taskpane.html"/>
-<!-- <RequestedWidth>600</RequestedWidth>
-<RequestedHeight>400</RequestedHeight> -->
-<!-- <DefaultPane>Taskpane</DefaultPane> -->
+<SourceLocation DefaultValue="https://excel-stg.beacon-dtx.com/taskpane.html"/>
 </DefaultSettings>
 <Permissions>ReadWriteDocument</Permissions>
 <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="VersionOverridesV1_0">
@@ -33,20 +30,7 @@
 <Runtimes>
 <Runtime resid="SharedRuntime.Url" lifetime="long"/>
 </Runtimes>
-<!-- <AllFormFactors>
-<ExtensionPoint xsi:type="CustomFunctions">
-<Script>
-<SourceLocation resid="Functions.Script.Url"/>
-</Script>
-<Page>
-<SourceLocation resid="SharedRuntime.Url"/>
-</Page>
-<Metadata>
-<SourceLocation resid="Functions.Metadata.Url"/>
-</Metadata>
-<Namespace resid="Functions.Namespace"/>
-</ExtensionPoint>
-</AllFormFactors> -->
+
 <DesktopFormFactor>
 <GetStarted>
 <Title resid="GetStarted.Title"/>
@@ -57,15 +41,7 @@
 <FunctionFile resid="SharedRuntime.Url"/>
 <ExtensionPoint xsi:type="PrimaryCommandSurface">
 <CustomTab id="BeaconDtx">
-<!-- <Tooltip>
-<Title resid="BeaconDtx.SuperTip.Title"/>
-<Description resid="BeaconDtx.SuperTip.Description"/>
-</Tooltip> -->
-<!-- <Action xsi:type="ShowTaskpane">
-<TaskpaneId>ButtonId1</TaskpaneId>
-<SourceLocation resid="Taskpane.Url"/>
-</Action> -->
-<!--  login button starts   -->
+
 <Group id="beacon">
 <Label resid="beacon.Label"/>
 <Icon>
@@ -98,19 +74,16 @@
 </Hosts>
 <Resources>
 <bt:Images>
-<bt:Image id="beaconDTX-logo.16x16" DefaultValue="https://kelvingrg.github.io/dist-addin-/assets/beaconDTX-logo-16.png"/>
-<bt:Image id="beaconDTX-logo.32x32" DefaultValue="https://kelvingrg.github.io/dist-addin-/assets/beaconDTX-logo-32.png"/>
-<bt:Image id="beaconDTX-logo.80x80" DefaultValue="https://kelvingrg.github.io/dist-addin-/assets/beaconDTX-logo-80.png"/>
+<bt:Image id="beaconDTX-logo.16x16" DefaultValue="https://excel-stg.beacon-dtx.com/assets/beaconDTX-logo-16.png"/>
+<bt:Image id="beaconDTX-logo.32x32" DefaultValue="https://excel-stg.beacon-dtx.com/assets/beaconDTX-logo-32.png"/>
+<bt:Image id="beaconDTX-logo.80x80" DefaultValue="https://excel-stg.beacon-dtx.com/assets/beaconDTX-logo-80.png"/>
 
 </bt:Images>
 <bt:Urls>
-<!-- <bt:Url id="Functions.Script.Url" DefaultValue="https://kelvingrg.github.io/dist-addin-/public/functions.js"/>
-<bt:Url id="Functions.Metadata.Url" DefaultValue="https://kelvingrg.github.io/dist-addin-/public/functions.json"/>
-<bt:Url id="Functions.Page.Url" DefaultValue="https://kelvingrg.github.io/dist-addin-/public/functions.html"/> -->
 <bt:Url id="GetStarted.LearnMoreUrl" DefaultValue="https://go.microsoft.com/fwlink/?LinkId=276812"/>
-<bt:Url id="Commands.Url" DefaultValue="https://kelvingrg.github.io/dist-addin-/commands.html"/>
-<bt:Url id="Taskpane.Url" DefaultValue="https://kelvingrg.github.io/dist-addin-/taskpane.html"/>
-<bt:Url id="SharedRuntime.Url" DefaultValue="https://kelvingrg.github.io/dist-addin-/taskpane.html"/>
+<bt:Url id="Commands.Url" DefaultValue="https://excel-stg.beacon-dtx.com/commands.html"/>
+<bt:Url id="Taskpane.Url" DefaultValue="https://excel-stg.beacon-dtx.com/taskpane.html"/>
+<bt:Url id="SharedRuntime.Url" DefaultValue="https://excel-stg.beacon-dtx.com/taskpane.html"/>
 </bt:Urls>
 <bt:ShortStrings>
 <bt:String id="Functions.Namespace" DefaultValue="BEACON"/>
