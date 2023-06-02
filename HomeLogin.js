@@ -2017,14 +2017,16 @@ var dtxGraphqlUrl = {
 };
 var devProdUrl = {
   development: "https://kelvingrg.github.io/dist-addin-",
-  production: "https://excel-dev.beacon-dtx.com",
+  production: "https://kelvingrg.github.io/dist-addin-",
   staging: "https://excel-stg.beacon-dtx.com"
 };
 var dtxBaseUrl = {
   development: "https://kelvingrg.github.io/dist-addin-",
-  production: "https://dev-be.beacon-dtx.com",
+  production: "https://kelvingrg.github.io/dist-addin-",
   staging: "https://stg-be.beacon-dtx.com/"
+  // https://dev-be.beacon-dtx.com
 };
+
 var DTX_GRAPHQL_URL = dtxGraphqlUrl["development"];
 var DTX_BASE_URL = dtxBaseUrl["development"];
 var BASE_URL = devProdUrl["development"];
